@@ -5,21 +5,95 @@
 :root {
     /* Colors
     Primary */
-    --Green-500: hsl(171, 66%, 44%);
-    --Blue-100: hsl(233, 100%, 69%);
+    --green-500: hsl(171, 66%, 44%);
+    --blue-100: hsl(233, 100%, 69%);
     /* Neutral */
-    --Dark-gray: hsl(210, 10%, 33%);
-    --Light-gray: hsl(201, 11%, 66%);
+    --dark-gray: hsl(210, 10%, 33%);
+    --light-gray: hsl(201, 11%, 66%);
+    --white: #fff;
+    /* Shadows */
+    --blue-shadow: rgb(67, 82, 193);
+    --green-shadow: rgb(61, 144, 131);
 }
 
-.bai-jamjuree-regular {
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 400;
+    /* font-weight: 600; */
     font-style: normal;
+    display: grid;
+    place-items: center;
 }
 
-.bai-jamjuree-semibold {
-    font-family: "Bai Jamjuree", sans-serif;
+.container {
+    width: clamp(350px, 50%, 38rem);
+    padding: 1.5em;
+}
+
+.content-header {
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-block-end: 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1rem;
+    padding-block-start: 5rem;
+}
+
+.content-header img {
+    margin-block-end: 3rem;
+    height: 120px;
+    width: 120px;
+}
+
+.content-header h1 {
+    /* font-size: clamp(16px, 1.6rem + 3vw, 2rem); */
+    font-size: 1.6rem;
+}
+
+.content-header p {
+    /* font-size: clamp(14px, 0.88rem + 2vw, 1.3rem); */
+    font-size: 0.88rem;
+    margin-block-end: 2rem;
+    line-height: 1.6;
+    color: var(--light-gray);
+}
+
+.content-header button {
+    width: 100%;
+    border-radius: 100vmax;
+    padding: 1rem;
+    border: none;
+    outline: none;
     font-weight: 600;
-    font-style: normal;
+    font-size: 0.9em;
+    color: var(--white);
+}
+
+#btn-ios {
+    background-color: var(--green-500);
+    box-shadow: 0 3px  var(--green-shadow);
+}
+
+#btn-mac {
+    background-color: var(--blue-100);
+    box-shadow: 0 3px  var(--blue-shadow);
 }
