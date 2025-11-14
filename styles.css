@@ -254,7 +254,7 @@ footer a {
 @media (min-width: 90rem) {
 
     .container {
-        width: clamp(700px, 70%, 70rem);
+        width: clamp(700px, 79%, 80rem);
     }
 
     .content-header {
@@ -355,19 +355,25 @@ footer a {
     .description-workflow {
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
+        gap: 4rem;
+    }
+
+    .description-workflow .section-heading2 {
+        font-size: 1.5rem;
+    }
+
+    .description-workflow .section-paragraph {
+        font-size: 1rem;
     }
 
     .section-workflow .div-description:first-child {
-        padding-block-end: 2rem;
+        padding-block-end: 0rem;
     }
 
     .section-images {
         flex-direction: row;
-        gap: 5rem;
         justify-content: space-between;
+        margin-block: 4rem;
     }
 
     .section-images img {
