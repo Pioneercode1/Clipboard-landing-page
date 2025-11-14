@@ -320,8 +320,12 @@ footer a {
         gap: 5rem;
     }
 
-    .container-description-snippets {
-        /* padding: 0; */
+    .container-description-snippets{
+        margin: 2.5rem;
+    }
+
+    .container-description-snippets .div-description {
+        margin: 0;
     }
 
     .image-computer {
