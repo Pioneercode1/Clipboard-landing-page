@@ -18,7 +18,9 @@
     --green-shadow: rgb(61, 144, 131);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
@@ -29,6 +31,7 @@ html {
 }
 
 body {
+    width: 100%;
     min-height: 100vh;
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 400;
@@ -40,6 +43,7 @@ body {
 
 .container {
     width: clamp(350px, 50%, 38rem);
+    min-height: 100%;
     padding-block-start: 1.5em;
 }
 
@@ -66,16 +70,23 @@ body {
 }
 
 .content-header .section-heading {
-    /* font-size: clamp(16px, 1.6rem + 3vw, 2rem); */
+    /* font-size: clamp(1.1rem, 1.6479rem + 1.5023vw, 2rem); */
     font-size: 1.6rem;
 }
 
 .section-paragraph {
-    /* font-size: clamp(14px, 0.88rem + 2vw, 1.3rem); */
+    /* font-size: clamp(0.9375rem, 0.8275rem + 0.4695vw, 1.25rem); */
     font-size: 0.88rem;
     margin-block-end: 2rem;
     line-height: 1.6;
     color: var(--light-gray);
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
 }
 
 .all-buttons {
@@ -89,21 +100,23 @@ body {
     color: var(--white);
 }
 
-.container-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
+.all-buttons:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
-#btn-ios {
+.all-buttons:focus {
+    opacity: 0.7;
+}
+
+.btn-ios {
     background-color: var(--green-500);
-    box-shadow: 0 3px  var(--green-shadow);
+    box-shadow: 0 3px var(--green-shadow);
 }
 
-#btn-mac {
+.btn-mac {
     background-color: var(--blue-100);
-    box-shadow: 0 3px  var(--blue-shadow);
+    box-shadow: 0 3px var(--blue-shadow);
 }
 
 .div-img img {
@@ -131,6 +144,7 @@ body {
 .div-description {
     padding-inline: 0.7em;
 }
+
 .section-heading2 {
     /* font-size: clamp(16px, 1.6rem + 3vw, 2rem); */
     font-size: 1.4rem;
@@ -140,11 +154,14 @@ body {
     margin-block-start: 10rem;
 }
 
-.section-clipboard .section-heading2, .section-workflow .section-heading2 {
+.section-clipboard .section-heading2,
+.section-workflow .section-heading2 {
     margin-block-end: 1rem;
     font-size: 1.5rem;
 }
-.section-clipboard .section-paragraph, .section-workflow .section-paragraph {
+
+.section-clipboard .section-paragraph,
+.section-workflow .section-paragraph {
     margin-block-end: 3rem;
 }
 
@@ -222,9 +239,124 @@ footer a {
     align-items: center;
     gap: 2rem;
     padding-block-start: 1rem;
-    
+
 }
 
 .social-media i {
     font-size: 1.6em;
+}
+
+@media (min-width: 90rem) {
+
+    .container {
+        width: clamp(700px, 70%, 70rem);
+        padding-block-start: 4em;
+    }
+
+    .content-header {
+        background-image: url(./images/bg-header-desktop.png);
+        background-size: cover;
+        padding-block-start: 8rem;
+    }
+
+    .content-header .section-heading {
+        font-size: clamp(1.7rem, 1.6rem + 1.5023vw, 2rem);
+    }
+
+    .section-paragraph {
+        font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+    }
+
+    .all-buttons {
+        padding-inline: 2rem;
+    }
+
+    .container-buttons {
+        width: 70%;
+        flex-direction: row;
+        gap: 2rem;
+        margin-inline-end: 2rem;
+    }
+
+    .container-snippets {
+        display: flex;
+        gap: 5;
+    }
+
+    .image-computer {
+        padding-inline-start: 0;
+        transform: translateX(-200px);
+    }
+
+    .image-computer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-description {
+        padding-inline-start: 0;
+        margin-block-start: 2rem;
+    }
+
+    .section-snippets .div-description {
+        text-align: left;
+    }
+
+    .section-clipboard .div-img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .description-workflow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .section-workflow .div-description:first-child {
+        padding-block-end: 2rem;
+    }
+
+    /* .section-workflow .workflow-img {
+        width: 30%;
+        height: auto;
+    } */
+
+    .section-images {
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+
+    .section-images img {
+        width: auto;
+        height: 40px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer img {
+        width: 50px;
+    }
+
+    footer nav {
+        margin-block-start: 0;
+    }
+
+    footer ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1rem 3rem;
+        margin-block-start: 0;
+    }
+
+    .social-media {
+        padding-block-start: 0;
+    }
 }

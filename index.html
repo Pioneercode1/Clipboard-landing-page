@@ -21,20 +21,21 @@
 
 <body>
 
-  <div class="container" role="main">
-    <!--  -->
+  
     <header class="content-header">
       <img src="./images/logo.svg" alt="Logo for a history of everything you copy" width="120" height="120">
       <h1 class="section-heading">A history of everything you copy</h1>
       <p class="section-paragraph">Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.</p>
       <div class="container-buttons">
-        <button type="button" id="btn-ios" class="all-buttons" title="Get Started with Clipboard"
+        <button type="button" id="btn-ios" class="all-buttons btn-ios" title="Get Started with Clipboard"
           aria-label="Get Started with Clipboard">Download for iOS</button>
-        <button type="button" id="btn-mac" class="all-buttons" title="Get Started with Clipboard"
+        <button type="button" id="btn-mac" class="all-buttons btn-mac" title="Get Started with Clipboard"
           aria-label="Get Started with Clipboard">Download for Mac</button>
       </div>
     </header>
+    <!--  -->
+    <div class="container" role="main">
     <!--  -->
     <main class="main-container">
       <!--  -->
@@ -47,24 +48,28 @@
             devices. Our Mac and iOS apps will help you organize everything.</p>
         </header>
         <!--  -->
-        <div>
-          <div class="div-img">
+
+        <div class="container-snippets">
+          <div class="div-img image-computer">
             <img src="./images/image-computer.png" alt="image computer" width="300" height="260">
           </div>
-          <div class="div-description">
-            <h2 class="section-heading2">Quick Search</h2>
-            <p class="section-paragraph">Easily search your snippets by content, category, web address, application,
-              and more.</p>
-          </div>
-          <div class="div-description">
-            <h2 class="section-heading2">iCloud Sync</h2>
-            <p class="section-paragraph">Instantly saves and syncs snippets across all your devices.</p>
-          </div>
-          <div class="div-description">
-            <h2 class="section-heading2">Complete History</h2>
-            <p class="section-paragraph">Retrieve any snippets from the first moment you started using the app.</p>
+          <div class="container-description-snippets">
+            <div class="div-description">
+              <h2 class="section-heading2">Quick Search</h2>
+              <p class="section-paragraph">Easily search your snippets by content, category, web address, application,
+                and more.</p>
+            </div>
+            <div class="div-description">
+              <h2 class="section-heading2">iCloud Sync</h2>
+              <p class="section-paragraph">Instantly saves and syncs snippets across all your devices.</p>
+            </div>
+            <div class="div-description">
+              <h2 class="section-heading2">Complete History</h2>
+              <p class="section-paragraph">Retrieve any snippets from the first moment you started using the app.</p>
+            </div>
           </div>
         </div>
+
       </section>
       <!--  -->
       <section class="section-clipboard">
@@ -86,28 +91,31 @@
         <!--  -->
       </section>
       <section class="general-section section-workflow">
-        <div>
+        <div class="div-description">
+          <h2 class="section-heading2">Supercharge your workflow</h2>
+          <p class="section-paragraph">We’ve got the tools to boost your productivity.</p>
+        </div>
+        <!--  -->
+        <div class="description-workflow">
           <!--  -->
+
           <div class="div-description">
-            <h2 class="section-heading2">Supercharge your workflow</h2>
-            <p class="section-paragraph">We’ve got the tools to boost your productivity.</p>
-          </div>
-          <!--  -->
-          <img class="workflow-img" src="./images/icon-blacklist.svg" alt="icon blacklist" width="44" height="40">
-          <div class="div-description">
+            <img class="workflow-img" src="./images/icon-blacklist.svg" alt="icon blacklist" width="44" height="40">
             <h2 class="section-heading2">Create blacklists</h2>
             <p class="section-paragraph">Ensure sensitive information never makes its way to your clipboard by excluding
               certain sources.</p>
           </div>
           <!--  -->
-          <img class="workflow-img" src="./images/icon-text.svg" alt="icon text" width="44" height="40">
+
           <div class="div-description">
+            <img class="workflow-img" src="./images/icon-text.svg" alt="icon text" width="44" height="40">
             <h2 class="section-heading2">Plain text snippets</h2>
             <p class="section-paragraph">Remove unwanted formatting from copied text for a consistent look.</p>
           </div>
           <!--  -->
-          <img class="workflow-img" src="./images/icon-preview.svg" alt="icon preview" width="44" height="40">
+
           <div class="div-description">
+            <img class="workflow-img" src="./images/icon-preview.svg" alt="icon preview" width="44" height="40">
             <h2 class="section-heading2">Sneak preview</h2>
             <p class="section-paragraph">Quick preview of all snippets on your Clipboard for easy access.</p>
           </div>
@@ -134,9 +142,9 @@
         </div>
         <!--  -->
         <div class="container-buttons">
-          <button type="button" id="btn-ios" class="all-buttons" title="Get Started with Clipboard"
+          <button type="button" id="btn-ios2" class="all-buttons btn-ios" title="Get Started with Clipboard"
             aria-label="Get Started with Clipboard">Download for iOS</button>
-          <button type="button" id="btn-mac" class="all-buttons" title="Get Started with Clipboard"
+          <button type="button" id="btn-mac2" class="all-buttons btn-mac" title="Get Started with Clipboard"
             aria-label="Get Started with Clipboard">Download for Mac</button>
         </div>
         <!--  -->
@@ -144,6 +152,8 @@
       <!--  -->
     </main>
     <!--  -->
+      </div>
+      <!--  -->
     <footer>
       <img src="./images/logo.svg" alt="logo" width="80" height="80">
       <nav>
@@ -155,14 +165,14 @@
           <li><a href="#">Install Guide</a></li>
         </ul>
       </nav>
-      <nav class="social-media">
-          <a href="#" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      </nav>
+      <ul class="social-media">
+        <li><a href="#" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
     </footer>
     <!--  -->
-  </div>
+
 
 </body>
 
