@@ -255,7 +255,6 @@ footer a {
 
     .container {
         width: clamp(700px, 70%, 70rem);
-        padding-block-start: 4em;
     }
 
     .content-header {
@@ -265,19 +264,31 @@ footer a {
         width: 100%;
     }
 
-    .section-heading2{
-        font-size: 2rem;
+    .content-header .section-heading {
+        font-size: 2.7rem;
         letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .section-heading2{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        padding-inline: 2rem;
+        margin-block-end: 0.5rem;
     }
 
     .section-paragraph, .content-buttons .section-paragraph {
-        font-size: 1.2rem;
+        font-size: 1.328rem;
+        padding-inline: 2rem;
     }
 
     .all-buttons {
         padding-inline: 2rem;
-        margin: 0 auto;
-        width: 30%;
+        margin-block-start: 1rem;
+        width: 40%;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .content-buttons {
@@ -288,9 +299,11 @@ footer a {
     }
 
     .container-buttons {
-        width: 70%;
+        width: 60%;
         flex-direction: row;
-        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .section-clipboard .section-heading2,
@@ -304,22 +317,26 @@ footer a {
 
     .container-snippets {
         display: flex;
-        gap: 5;
+        gap: 5rem;
+    }
+
+    .container-description-snippets {
+        /* padding: 0; */
     }
 
     .image-computer {
-        padding-inline-start: 0;
-        transform: translateX(-200px);
+        margin-block-start: 1rem;
+        transform: translateX(-275px);
     }
 
     .image-computer img {
-        width: 100%;
+        width: 170%;
         height: auto;
     }
 
     .div-description {
         padding-inline-start: 0;
-        margin-block-start: 2rem;
+        margin-block-start: 5rem;
     }
 
     .section-snippets .div-description {
@@ -327,8 +344,8 @@ footer a {
     }
 
     .section-clipboard .div-img {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 90%;
+        margin: 6rem auto;
     }
 
     .description-workflow {
